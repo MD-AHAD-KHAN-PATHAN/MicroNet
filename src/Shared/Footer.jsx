@@ -2,10 +2,10 @@ import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } 
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-orange-500 text-orange-100 font-semibold">
+        <footer className="footer p-10 bg-yellow-500 text-yellow-100 font-semibold">
             <aside>
                 <img className="w-20" src="https://i.ibb.co/phvWTDq/Logo.png" alt="company logo" />
-                <p>Quantum Estates Ltd.<br />Providing reliable service since 2017</p>
+                <p>Micro Net Ltd.<br />Providing reliable service since 2017</p>
             </aside>
             <nav>
                 <header className="footer-title">Services</header>
@@ -20,10 +20,10 @@ const Footer = () => {
             <nav>
                 <header className="footer-title">Social</header>
                 <div className="grid grid-flow-col gap-4">
-                    <a className='text-4xl text-orange-100' href="https://www.facebook.com/"><AiFillFacebook></AiFillFacebook></a>
-                    <a className='text-4xl text-orange-100' href="https://www.instagram.com/"><AiFillInstagram></AiFillInstagram></a>
-                    <a className='text-4xl text-orange-100' href="https://www.linkedin.com/"><AiFillLinkedin></AiFillLinkedin></a>
-                    <a className='text-4xl text-orange-100' href="https://twitter.com/"><AiFillTwitterSquare></AiFillTwitterSquare></a>
+                    <a className='text-4xl text-yellow-100' href="https://www.facebook.com/"><AiFillFacebook></AiFillFacebook></a>
+                    <a className='text-4xl text-yellow-100' href="https://www.instagram.com/"><AiFillInstagram></AiFillInstagram></a>
+                    <a className='text-4xl text-yellow-100' href="https://www.linkedin.com/"><AiFillLinkedin></AiFillLinkedin></a>
+                    <a className='text-4xl text-yellow-100' href="https://twitter.com/"><AiFillTwitterSquare></AiFillTwitterSquare></a>
                 </div>
             </nav>
         </footer>

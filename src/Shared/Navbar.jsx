@@ -9,19 +9,14 @@ const Navbar = () => {
     
 
     const navLink = <>
-        <li><NavLink to='/' className={"font-bold text-orange-600"}>Home</NavLink></li>
-        <li><NavLink to='/verifyedPropertyes' className={"font-bold text-orange-600"}>All properties</NavLink></li>
-
-
+        <li><NavLink to='/' className={"font-bold text-yellow-400"}>Home</NavLink></li>
+        <li><NavLink to='/dashboard' className={"font-bold text-yellow-400"}>Dashboard</NavLink></li>
         
-        {
-            user && <li><NavLink to='/dashboard/userProfile' className={"font-bold text-orange-600"}>Dashboard</NavLink></li>
-        }
        
     </>
 
     return (
-        <div>
+        <div className="mx-20">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -33,7 +28,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to='/' className="w-12"><img src="https://i.ibb.co/phvWTDq/Logo.png" alt="" /></Link>
-                    <Link to='/' className="font-bold text-xl text-orange-600"><p>MicroNet</p></Link>
+                    <Link to='/' className="font-bold text-xl text-yellow-400"><p>MicroNet</p></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -62,7 +57,7 @@ const Navbar = () => {
                             :
 
                             <Link to='/login'>
-                                <button className="btn btn-ghost text-orange-600 border-2 border-orange-500 font-bold hover:text-white hover:bg-text-orange-600"> <BiLogInCircle/> Sign In</button>
+                                <button className="btn btn-ghost text-yellow-400 border-2 border-yellow-400 font-bold hover:text-white hover:bg-text-yellow-400"> <BiLogInCircle/> Sign In</button>
                             </Link>
                     }
                 </div>

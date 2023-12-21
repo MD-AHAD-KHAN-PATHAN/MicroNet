@@ -122,7 +122,7 @@ const Registration = () => {
                         <img className='md:max-w-lg max-w-sm' src={registerImage} alt="" />
                     </div>
                     <div className="card flex-shrink-0 max-w-2xl shadow-2xl bg-base-100">
-                        <div className='bg-orange-600 p-6 text-white rounded-t-lg'>
+                        <div className='bg-yellow-600 p-6 text-white rounded-t-lg'>
                             <h1 className='text-3xl font-semibold'>create account</h1>
                             <label className="label font-semibold text-lg">
                                 Already Have account ? <Link to="/login" className="label-text-alt link link-hover text-lg text-white font-bold underline">Please Login</Link>
@@ -132,31 +132,31 @@ const Registration = () => {
                             <form onSubmit={handleSubmit(onSubmit)} className='grid grid-cols-2 gap-4'>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text text-orange-500">Full Name</span>
+                                        <span className="label-text text-yellow-500">Full Name</span>
                                     </label>
-                                    <input type="name" {...register("name", { required: true })} placeholder="Full name" className="border-1 border-orange-500 input input-bordered" required />
+                                    <input type="name" {...register("name", { required: true })} placeholder="Full name" className="border-1 border-yellow-500 input input-bordered" required />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text text-orange-500">Profile Image</span>
+                                        <span className="label-text text-yellow-500">Profile Image</span>
                                     </label>
-                                    <input type="file" className="file-input w-full border-orange-400" {...register("image", { required: true })} />
+                                    <input type="file" className="file-input w-full border-yellow-400" {...register("image", { required: true })} />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text text-orange-500">Email</span>
+                                        <span className="label-text text-yellow-500">Email</span>
                                     </label>
-                                    <input type="email" {...register("email", { required: true })} placeholder="email" className="border-1 border-orange-500 input input-bordered" required />
+                                    <input type="email" {...register("email", { required: true })} placeholder="email" className="border-1 border-yellow-500 input input-bordered" required />
                                 </div>
 
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text text-orange-500">Password</span>
+                                        <span className="label-text text-yellow-500">Password</span>
                                     </label>
-                                    <input type="password" {...register("password", { required: true })} placeholder="password" className="border-1 border-orange-500 input input-bordered" required />
+                                    <input type="password" {...register("password", { required: true })} placeholder="password" className="border-1 border-yellow-500 input input-bordered" required />
                                 </div>
                                 <div className="form-control mt-6 p-0 col-span-2">
-                                    <button className="btn bg-white  hover:bg-orange-400 hover:text-white text-orange-500 border-1 border-orange-400 font-bold"> <FaRegistered/> Register</button>
+                                    <button className="btn bg-white  hover:bg-yellow-400 hover:text-white text-yellow-500 border-1 border-yellow-400 font-bold"> <FaRegistered/> Register</button>
                                 </div>
                             </form>
                         </div>

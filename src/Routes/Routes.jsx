@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Authentication/Login/Login";
 import Registration from "../Pages/Authentication/Registration/Registration";
 import PrivateRoute from "./PrivateRoute";
+import DashBoards from "../Pages/DashBoards/DashBoards";
 
 
 const Routes = createBrowserRouter([
@@ -26,19 +27,12 @@ const Routes = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
-            
+            {
+                path: '/dashboard',
+                element: <PrivateRoute> <DashBoards></DashBoards> </PrivateRoute>,
+            }            
         ]
     },
-    {
-        path: '/dashboard',
-        element: <PrivateRoute> </PrivateRoute>,
-        children: [
-            // Admin Related Routes           
-            
-            
-            
-        ]
-    }
 ])
 
 export default Routes;

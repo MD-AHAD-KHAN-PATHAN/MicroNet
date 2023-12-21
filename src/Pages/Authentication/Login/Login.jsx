@@ -53,7 +53,7 @@ const Login = () => {
                         <img className='md:max-w-lg max-w-sm' src={loginImage} alt="" />
                     </div>
                     <div className="card flex-shrink-0 max-w-3xl shadow-2xl">
-                        <div className='bg-orange-600 p-6 text-white rounded-t-lg'>
+                        <div className='bg-yellow-600 p-6 text-white rounded-t-lg'>
                             <h1 className='text-3xl font-semibold'>Sign in</h1>
                             <label className="label font-semibold md:text-lg">
                                 Don't have an account ? <Link to="/registration" className="label-text-alt md:text-lg link link-hover text-white font-bold underline ml-4">Create account</Link>
@@ -63,19 +63,19 @@ const Login = () => {
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text text-orange-500">Email</span>
+                                        <span className="label-text text-yellow-500">Email</span>
                                     </label>
-                                    <input type="email" {...register("email", { required: true })} placeholder="email" className="border-1 border-orange-400 input input-bordered w-full" required />
+                                    <input type="email" {...register("email", { required: true })} placeholder="email" className="border-1 border-yellow-400 input input-bordered w-full" required />
                                 </div>
 
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text text-orange-500">Password</span>
+                                        <span className="label-text text-yellow-500">Password</span>
                                     </label>
-                                    <input type="password" {...register("password", { required: true })} placeholder="password" className="border-1 border-orange-400 input input-bordered" required />
+                                    <input type="password" {...register("password", { required: true })} placeholder="password" className="border-1 border-yellow-400 input input-bordered" required />
                                 </div>
                                 <div className="form-control mt-6 p-0">
-                                    <button className="btn bg-white  hover:bg-orange-400 hover:text-white text-orange-500 border-1 border-orange-400 font-bold"> <BiLogInCircle/> Login</button>
+                                    <button className="btn bg-white  hover:bg-yellow-400 hover:text-white text-yellow-500 border-1 border-yellow-400 font-bold"> <BiLogInCircle/> Login</button>
                                 </div>
                             </form>
                             <SocialLogin></SocialLogin>
