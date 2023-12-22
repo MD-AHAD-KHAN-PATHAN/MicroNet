@@ -5,12 +5,11 @@ const Footer = () => {
         <footer className="footer p-10 bg-yellow-500 text-yellow-100 font-semibold">
             <aside>
                 <img className="w-20" src="https://i.ibb.co/phvWTDq/Logo.png" alt="company logo" />
-                <p>Micro Net Ltd.<br />Providing reliable service since 2017</p>
+                <h2 className='text-2xl font-bold'>Micro Net Ltd.</h2>
+                <p>Providing reliable service since 2017</p>
+                <p>Easy to use Work management solution which <br /> is both Powerful and intuitive.</p>
             </aside>
-            <nav>
-                <header className="footer-title">Services</header>
-                <a className="link link-hover">Premium Services</a>
-            </nav>
+            
             <nav>
                 <header className="footer-title">Legal</header>
                 <a className="link link-hover">Terms & Conditions</a>
