@@ -30,7 +30,7 @@ const Routes = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <PrivateRoute> <DashBoards></DashBoards> </PrivateRoute>,
-            }            
+            }
         ]
     },
 ])
