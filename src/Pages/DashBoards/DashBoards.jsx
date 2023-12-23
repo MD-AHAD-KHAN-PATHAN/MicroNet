@@ -6,6 +6,7 @@ import useAllTasks from "../../Hooks/useAllTasks";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from "react-router-dom";
 
 
 const DashBoards = () => {
@@ -172,7 +173,7 @@ const DashBoards = () => {
                                             <div className="flex justify-between">
                                                 <button onClick={() => handleDelete(task?._id)} className="px-2 py-1 bg-red-600 rounded-full font-semibold text-white">Delete</button>
                                                 <ToastContainer />
-                                                <button onClick={() => handleOnGoing(task?._id)} className="px-2 py-1 bg-blue-600 font-semibold rounded-full text-white">Update</button>
+                                                <Link to={`/update/${task?._id}`}><button className="px-2 py-1 bg-blue-600 font-semibold rounded-full text-white">Update</button></Link>
                                                 <button onClick={() => handleOnGoing(task?._id)} className="px-2 py-1 bg-lime-600 font-semibold rounded-full text-white">OnGoing</button>
                                             </div>
                                         </div>
@@ -201,7 +202,7 @@ const DashBoards = () => {
                                         <div className="flex justify-between">
                                             <button onClick={() => handleDelete(task?._id)} className="px-2 py-1 bg-red-600 rounded-full font-semibold text-white">Delete</button>
                                             <ToastContainer />
-                                            <button onClick={() => handleOnGoing(task?._id)} className="px-2 py-1 bg-blue-600 font-semibold rounded-full text-white">Update</button>
+                                            <Link to={`/update/${task?._id}`}><button  className="px-2 py-1 bg-blue-600 font-semibold rounded-full text-white">Update</button></Link>
                                             <button onClick={() => handleComplete(task?._id)} className="px-2 py-1 bg-yellow-600 font-semibold rounded-full text-white">Complete</button>
                                         </div>
                                     </div>}
@@ -226,7 +227,7 @@ const DashBoards = () => {
                                         <div className="flex justify-between">
                                             <button onClick={() => handleDelete(task?._id)} className="px-2 py-1 bg-red-600 rounded-full font-semibold text-white">Delete</button>
                                             <ToastContainer />
-                                            <button onClick={() => handleOnGoing(task?._id)} className="px-2 py-1 bg-blue-600 font-semibold rounded-full text-white">Update</button>
+                                            <Link to={`/update/${task?._id}`}><button  className="px-2 py-1 bg-blue-600 font-semibold rounded-full text-white">Update</button></Link>
                                         </div>
                                     </div>
                                 }
