@@ -31,7 +31,7 @@ const Login = () => {
                     text: "Login Successfull !",
                     icon: "success"
                   });
-                  navigate(location?.state ? location.state : '/')
+                  navigate(location?.state ? location.state : '/dashboard')
             })
             .catch((error) => {
                 Swal.fire({

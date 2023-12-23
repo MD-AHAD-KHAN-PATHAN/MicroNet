@@ -5,7 +5,7 @@ import useAllTasks from "../../Hooks/useAllTasks";
 import { ToastContainer, toast } from "react-toastify";
 
 const Update = () => {
-    const data = useLoaderData();
+    const lodedData = useLoaderData();
     const [tasks, refetch] = useAllTasks();
 
     const axiosPublic = useAxiosPublic();
@@ -16,16 +16,16 @@ const Update = () => {
         formState: { errors },
     } = useForm({
         defaultValues: {
-            title: `${data?.title}`,
-            description: `${data?.description}`,
-            date: `${data?.date}`,
-            priority: `${data?.priority}`,
+            title: `${lodedData?.title}`,
+            description: `${lodedData?.description}`,
+            date: `${lodedData?.date}`,
+            priority: `${lodedData?.priority}`,
         },
     })
 
     const onSubmit = async (data) => {
 
-        axiosPublic.patch(`/task/update/${data?._id}`, data)
+        axiosPublic.patch(`/task/update/${lodedData?._id}`, data)
         .then(res => {
             if(res.data.modifiedCount > 0){
                 toast.success('Your task is updated successfully')

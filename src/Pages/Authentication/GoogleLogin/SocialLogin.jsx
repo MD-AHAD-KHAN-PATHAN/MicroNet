@@ -35,7 +35,7 @@ const SocialLogin = () => {
                                 timer: 2000
                             });
 
-                            navigate(location?.state ? location.state : '/');
+                            navigate(location?.state ? location.state : '/dashboard');
                         }
                     })
             })

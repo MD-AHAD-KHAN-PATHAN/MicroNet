@@ -8,6 +8,7 @@ import Registration from "../Pages/Authentication/Registration/Registration";
 import PrivateRoute from "./PrivateRoute";
 import DashBoards from "../Pages/DashBoards/DashBoards";
 import Update from "../Pages/Updata/Update";
+import Terms from "../Pages/Terms&Condition/Terms";
 
 
 const Routes = createBrowserRouter([
@@ -36,6 +37,10 @@ const Routes = createBrowserRouter([
                 path: '/update/:id',
                 element: <PrivateRoute> <Update></Update> </PrivateRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/task/update/${params?.id}`)
+            },
+            {
+                path: '/terms&conditions',
+                element: <Terms></Terms>
             }
         ]
     },
