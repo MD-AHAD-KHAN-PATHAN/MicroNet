@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import DashBoards from "../Pages/DashBoards/DashBoards";
 import Update from "../Pages/Updata/Update";
 import Terms from "../Pages/Terms&Condition/Terms";
+import About from "../Pages/About/About";
 
 
 const Routes = createBrowserRouter([
@@ -41,6 +42,10 @@ const Routes = createBrowserRouter([
             {
                 path: '/terms&conditions',
                 element: <Terms></Terms>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             }
         ]
     },
