@@ -2,8 +2,8 @@
 
 const About = () => {
     return (
-        <div className="m-20">
-            <h1 className="text-5xl font-bold mb-10">Our team members</h1>
+        <div className="md:m-20 m-4">
+            <h1 className="md:text-5xl text-4xl font-bold mb-10">Our team members</h1>
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
                 <div className="border rounded-md">
                     <img src="https://i.ibb.co/7Wf5x9G/lily.jpg" alt="" />

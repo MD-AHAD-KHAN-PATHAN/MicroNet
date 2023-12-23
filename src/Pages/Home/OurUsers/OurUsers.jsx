@@ -5,11 +5,11 @@ const OurUsers = () => {
 
     return (
 
-        <div className="mx-20">
+        <div className="md:mx-20 mx-4">
 
             <h1 className="text-5xl font-bold text-center mt-20 mb-4">Our Users</h1>
             <p className="text-center font-medium mb-10">This task management platform can be used by a diverse range of individuals <br /> and groups across various industries. Here are some categories of people and <br /> situations where a task management platform can be beneficial.</p>
-            <div className="grid grid-cols-3 gap-6 mb-5">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 grid-cols-1 mb-5">
                 <div  className="bg-green-300 p-5 rounded-md">
                     <h1 className="font-bold">Research and Academia</h1>
                     <li>Researchers managing experiments</li>

@@ -87,7 +87,7 @@ const DashBoards = () => {
     return (
         <div>
             {/* Profile details */}
-            <div className="col-span-1 bg-yellow-200 flex justify-center py-20 rounded-md">
+            <div className="col-span-1 bg-yellow-200 flex justify-center lg:py-20 py-10 rounded-md">
                 <div className="">
                     <div className="w-52 h-52 rounded-full border-8 border-yellow-500 flex justify-center items-center">
                         <img className="w-40 h-40 rounded-full" src={user?.photoURL} alt="" />
@@ -98,7 +98,7 @@ const DashBoards = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-4 mx-20 my-10">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 md:mx-20 mx-4 my-10">
 
                 {/* Create Task */}
                 <div className="">

@@ -5,7 +5,10 @@ const Header = () => {
 
     return (
 
-        <div className="flex justify-between mx-20 my-10">
+        <div className="md:flex flex-row-reverse justify-between md:mx-20 mx-4 my-10">
+            <div className="lg:w-3/5 md:w-5/6 mx-auto my-auto">
+                <img className="" src="https://i.ibb.co/dcRW0Yp/her-micronet.jpg" alt="" />
+            </div>
             <div className="flex items-center">
                 <div>
                     <h1 className="text-5xl font-bold">Manage work <span className="text-yellow-300">Efficiently.</span></h1>
@@ -14,11 +17,6 @@ const Header = () => {
                     <Link to="/login"><button className="px-4 py-2 font-bold bg-yellow-300 text-white mt-4 rounded-lg">Let’s Explore</button></Link>
                 </div>
             </div>
-            <div className="w-3/5">
-                <img className="" src="https://i.ibb.co/dcRW0Yp/her-micronet.jpg" alt="" />
-            </div>
-
-
         </div>
 
     );
